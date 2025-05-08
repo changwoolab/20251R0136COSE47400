@@ -11,8 +11,8 @@ from transformers import (
     Trainer,
 )
 import torch
-from cifake.vit.data_loader import get_dataset
-from cifake.vit.vit_processor import get_vit_processor_and_transform, get_vit_model
+from data_loader import get_dataset
+from vit_processor import get_vit_processor_and_transform, get_vit_model
 from utils import compute_metrics
 
 def collate_fn(examples):

@@ -16,7 +16,7 @@ def map_label2id(example):
     example['label'] = ClassLabels.str2int(example['label'])
     return example
 
-def get_dataset(data_dir: str = '../data/'):
+def get_dataset(data_dir: str = 'cifake/data/'):
     # Initialize empty lists to store file names and labels
     file_names = []
     labels = []
